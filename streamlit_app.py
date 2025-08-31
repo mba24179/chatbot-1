@@ -16,7 +16,7 @@ st.markdown("Your premium chauffeur booking assistant.")
 # === Load OpenAI Client ===
 if "OPENAI_API_KEY" in st.secrets:
     try:
-        client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+        client = OpenAI(api_key=st.secrets["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"])
         key_available = True
     except Exception:
         client = None
